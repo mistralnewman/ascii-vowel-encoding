@@ -1,0 +1,2 @@
+This code encodes strings as random English words (or words from any wordlist) where the digits of the UTF-8 or ASCII binary representation of the characters of the string match letter patterns in the words. (In the current version of the code, vowels and Y match with 0, and consonants match with 1; however, this can be easily changed.)
+The wordlist used in this project was downloaded from https://github.com/dwyl/english-words, and is not mine.

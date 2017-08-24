@@ -31,7 +31,7 @@ def is_zero(letter):
     return letter in "aeiouy"
 
 # get words from a file
-wordfile = open("english2.txt")
+wordfile = open("corpus.txt")
 words = wordfile.readlines()
 
 # remove trailing whitespace from each word
@@ -95,4 +95,5 @@ def binary_decode(string):
         plaintext += chr(int(string[i:i+8], 2))
     return plaintext
 
-print binary_encode("Hello world!")
+# prints encoded version of user-input string
+print binary_encode(raw_input("What text would you like to encode?\n>"))
